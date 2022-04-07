@@ -1,0 +1,35 @@
+important:
+
+- [done] (ui) not fully responsive
+- [done] need to be able to pop up alert messages if the contract rejects something
+for some reason (system errors)
+- [done] (bug) after approving the create page fails to load without refresh because
+we didn't pass the target in
+- [done] (bug) after approving someone, we should wait until the contract call finishes
+until we progress forward, otherwise the page isn't fully filled out
+and the user will have to refresh. maybe put in an event to wait for user to
+have an agreement and then progress on to create.
+- [done] (bug) error if we go to /swap and metamask isn't logged in
+- [done] (bug) after cancelling I have to refresh because cancel doesn't wait on the transaction
+to finish
+- [done] (bug) after creation we need to clear local storage
+- [done] (bug) addresses aren't being checked on approval button click
+- [done] (bug) after depositing assets I wasn't sent to withdraw page
+- [done] (bug) put something in
+address bar then remove, we don't see invalid address alert, it lets us continue
+- [done] (ui) add disclaimer about product being new and unaudited
+- [done] [contract] fix tests
+- [done] [contract] make sure users cannot approve themselves
+- [done] [contract] make fees happen on swap approval
+- [done] [contract] don't allow cancelling if nothing to cancel
+
+unimportant (for now):
+- change the verify on create so that it has a cancel button that is red instead of
+making them use the X
+- change address bar urls
+- (ui) need to say 'Add NFTs' or something if there are none
+- (bug) depositing all NFTs in quick succession causes us to go to the withdraw
+page before they can each complete depositing (fixed by refresh)
+- [contract] (weirdness) unmanaged assets is pretty worthless when it returns
+address zero
+
